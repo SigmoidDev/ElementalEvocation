@@ -77,7 +77,7 @@ public class UpgradeManager : Singleton<UpgradeManager>
         text2s[5].text = GetCost("SpeedMult").ToString();
         sliders[5].value = speed;
 
-        if(upgradeMenu.activeInHierarchy && Input.GetKeyDown(KeyCode.Escape))
+        if(upgradeMenu.activeInHierarchy && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Q)))
         {
             HideUpgradeMenu();
         }
