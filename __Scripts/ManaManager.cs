@@ -56,7 +56,7 @@ public class ManaManager : Singleton<ManaManager>
         count2.text = $"{mana}/{UpgradeManager.MaxMana}";
 
         if(!spiritMenu.activeInHierarchy){ return; }
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Q))
         {
             HideSpiritScreen();
         }
